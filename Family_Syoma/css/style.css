@@ -59,10 +59,10 @@ h1{
 	z-index: -1;
 }
 .family{
-	position: absolute;
-	left: 500px;
-	top: 150px;
-	width: 400px;
+	position: relative;
+	left: -190px;
+	top: 0px;
+	width: 350px;
 }
 a{
   color: #fff;
