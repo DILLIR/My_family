@@ -16,6 +16,8 @@ h1{
 	width: 960px;
 	height: 100%;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 .header{
 	width: 100%;
@@ -35,6 +37,23 @@ h1{
 }
 .header_navigation li:last-child{
 	margin-right: 0;
+}
+.pictures{
+	position: relative;
+	width: 100%;
+	height: auto;	
+}
+.earth{
+	position: absolute;
+	left: 17%;
+	top: -20px;
+	width: 520px;
+}
+.family{
+	position: absolute;
+	width: 400px;
+	top: 80px; 
+	left: 220px;
 }
 a{
   color: #fff;
