@@ -12,6 +12,7 @@ body{
 h1{
 	font-size: 24pt;
 	font-weight: 500;	
+	text-align: center;
 }
 .container{
 	width: 960px;
@@ -22,21 +23,17 @@ h1{
 	width: 100%;
 	height: 150px;
 	padding: 30px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	border: 
 }
 .logo{
 	width: 170px;
+	float: left;
 }
-.header .menu .header_navigation li{
-	display: inline-block;
-	margin-right: 5px;
+.menu{
+	float: right;
+	margin-top: 10px;
 }
+<<<<<<< HEAD
 .group{
 	font-weight: bold;
 	margin-top: 5px;
@@ -58,25 +55,29 @@ article>div{
 	width: 230px;
 	border: 1px solid black;
 	margin-top: 5px;
+=======
+.header_navigation li{
+	display: inline;
+>>>>>>> parent of 57e149d... Flex
 }
-article>div:nth-child(4n+1){
-	margin-left: 10px;
+h3{
+	margin-top: 10px;
 }
-
-article>div:nth-child(4n){
-	margin-right: 10px;
+.header_title{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	width: 320px;
+	margin-top: -5px;
+	float: left;
 }
-article>div:last-child{
-	margin-right: 10px;
-}
-
 a{
     color: #fff;
     text-decoration: none;
     position: relative;
-    font-size:  17px;
-}
-a:before{
+    font-size:  15px;
+  }
+  a:before{
     content: " ";
     background: #000;
     width: 100%;
@@ -86,9 +87,10 @@ a:before{
     left: 1%;
     transform: scaleX(0);
     transition: all 0.5s;
-}
-a:hover:before{
+  }
+  a:hover:before{
     transform: scaleX(1);
+<<<<<<< HEAD
 =======
 .header_navigation a{
 	color: white;
@@ -107,3 +109,6 @@ h3{
 	float: left;
 >>>>>>> parent of f308db5... Правки
 }
+=======
+  }
+>>>>>>> parent of 57e149d... Flex
