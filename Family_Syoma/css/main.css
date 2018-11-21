@@ -89,18 +89,27 @@ h3{
 	float: left;
 }
 article{
-	border: 1px solid red;
 	width: 100%;
 	height: auto;
 }
+article:after {
+    content: "";
+    clear: both;
+    display: table;
+}
 .content>div{
-	width: 200px;
+	width: 232px;
 	height: 300px;
 	border: 1px solid black;
 	float: left;
 	margin-right: 10px;
 	margin-bottom: 5px;
+	background: url(https://via.placeholder.com/232x300);
 }
 .content>div:nth-child(4n){
+	margin-right: 0;
+}
+.content>div:last-child{
+	float: right;
 	margin-right: 0;
 }
