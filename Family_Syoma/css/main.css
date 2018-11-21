@@ -79,3 +79,49 @@ article{
 	float: right;
 	margin-right: 0;
 }
+.menu-btn{
+	height: 50px;
+	width: 50px;
+	background: #fff;
+	border-radius: 50%;
+	display: block;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after{
+	position: relative;
+	top: 50%;
+	width: 20px;
+	height: 2px;
+	background: #222;
+	display: block;
+	margin-top: -1px;
+	left: 50%;
+	margin-left: -10px;
+}
+.menu-btn span:before,
+.menu-btn span:after{
+	content: "";
+	display: block;
+	transition: 0.5s;
+}
+.menu-btn span:before{
+	transform: translateY(-5px);
+}.menu-btn span:after{
+	transform: translateY(2px);
+}
+a.menu-btn:before{
+	transform: scale(1);
+	position: static;
+	width: 0;
+	height: 0;
+}
+.menu-btn_active span{
+	height: 0;
+}
+.menu-btn_active span:before{
+	transform: rotate(45deg);
+}
+.menu-btn_active span:after{
+	transform: rotate(-45deg);
+}
