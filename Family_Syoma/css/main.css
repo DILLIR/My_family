@@ -37,23 +37,7 @@ h1{
 	font-weight: bold;
 	margin-top: 5px;
 }
-.content{
-	height: auto;
-	width: 100%;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-article>div{
-	height: 300px;
-	width: 230px;
-	border: 1px solid black;
-	margin-top: 5px;
-}
+
 .header_navigation li{
 	display: inline;
 }
@@ -103,4 +87,20 @@ h3{
 	width: 320px;
 	margin-top: -5px;
 	float: left;
+}
+article{
+	border: 1px solid red;
+	width: 100%;
+	height: auto;
+}
+.content>div{
+	width: 200px;
+	height: 300px;
+	border: 1px solid black;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+.content>div:nth-child(4n){
+	margin-right: 0;
 }
