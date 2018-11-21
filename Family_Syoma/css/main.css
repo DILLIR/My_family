@@ -33,7 +33,6 @@ h1{
 	float: right;
 	margin-top: 10px;
 }
-<<<<<<< HEAD
 .group{
 	font-weight: bold;
 	margin-top: 5px;
@@ -49,16 +48,14 @@ h1{
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-<<<<<<< HEAD
 article>div{
 	height: 300px;
 	width: 230px;
 	border: 1px solid black;
 	margin-top: 5px;
-=======
+}
 .header_navigation li{
 	display: inline;
->>>>>>> parent of 57e149d... Flex
 }
 h3{
 	margin-top: 10px;
@@ -88,10 +85,9 @@ a{
     transform: scaleX(0);
     transition: all 0.5s;
   }
-  a:hover:before{
-    transform: scaleX(1);
-<<<<<<< HEAD
-=======
+ a:hover:before{
+    transform: scaleX(1);}
+
 .header_navigation a{
 	color: white;
 	text-decoration: none;
@@ -107,8 +103,4 @@ h3{
 	width: 320px;
 	margin-top: -5px;
 	float: left;
->>>>>>> parent of f308db5... Правки
 }
-=======
-  }
->>>>>>> parent of 57e149d... Flex
