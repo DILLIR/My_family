@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 		<title>Головна сторінка</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
@@ -15,7 +15,7 @@
 				<div class="header_title">
 					<h1>Моя родина</h1>
 				</div>
-				<nav class="menu">
+				<nav class="menu" id="menu">
 					<ul class="header_navigation">
 						<li><a href="">На початок</a></li>
 						<li><a href="">2017-1</a></li>
@@ -24,12 +24,13 @@
 						<li><a href="">Сьогодні</a></li>
 						<li><a href="">Минуле</a></li>
 					</ul>
-					<a href="#" class="menu-btn"><span></span></a>
 					<div class="group">Група ШКМ 2017-1</div>
-					
 				</nav>
+				<main id="panel">
+					
+				</main>
 			</header>
-			<article class="content">
+			<article class="content" >
 				<div class="classmate1"></div>
 				<div class="classmate2"></div>
 				<div class="classmate3"></div>
@@ -46,13 +47,14 @@
 				<div class="classmate14"></div>
 			</article>
 			<footer class="footer"></footer>
-		</div>
-		<script type="text/javascript" src="javascript/jquery-3.3.1.min.js"></script>
-		<script type="text/javascript">
-			$('.menu-btn').on('click', function(e) {
-				e.preventDefault;
-				$(this).toggleClass('menu-btn_active')
-			});
-		</script>
+			<script src="js/slideout.min.js"></script>
+			<script>
+			  var slideout = new Slideout({
+			    'panel': document.getElementById('panel'),
+			    'menu': document.getElementById('menu'),
+			    'padding': 256,
+			    'tolerance': 100
+			  });
+			</script>
 	</body>
 </html>
