@@ -4,8 +4,7 @@
 	box-sizing: border-box;
 }
 body{
-	background: #bbcf00;
-	margin-top: 20px;
+	background: #FFF9C4;
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
 }
@@ -28,7 +27,9 @@ h1{
 	 display: -o-flex;
 	 display: flex;
 	 justify-content: space-between;
-	 align-items: center; 
+	 align-items: center;
+	 background:  #FBC02D;
+	 margin-bottom: 10px; 
 }
 .logo{
 	width: 170px;
@@ -67,17 +68,22 @@ div[class*="classmate"]{
 	width: 232px;
 	height: 300px;
 	border: 1px solid black;
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	background: url(https://via.placeholder.com/232x300);
 }
-div[class*="classmate"]:nth-child(4n){
-	margin-right: 0;
-}
-div[class*="classmate"]:last-child{
-	float: right;
-	margin-right: 0;
+.classmates{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
 }
 .big{
 	height: 420px;
@@ -114,13 +120,40 @@ div[class*="classmate"]:last-child{
   background-repeat: no-repeat;
   background-position: cover;
 }
-.info{
+footer{
+	height: 100px;
+	background:  #FBC02D;
+	margin-top: 10px;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+p{
 	border: 1px solid black;
-	padding: 15px;
+	text-indent: 30px;
+	padding: 10px;
+	color: #000;
 	margin-top: 10px;
 }
-.footer{
-	text-align: center;
-	height: 150px;
-	line-height: 150px;
+img[class*="foto"]{
+	height: 320px;
+  	width: 235px;
+  	display: block;
+}
+.family-future{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.family-future p{
+	width: 24.5%;
 }
